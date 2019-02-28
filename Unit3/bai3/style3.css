@@ -1,0 +1,132 @@
+.container {
+    width: 795px;
+    height: auto;
+    margin: auto;
+    border: 3px solid white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    background: white;
+}
+.banner{
+    width: 100%;
+    height: 370px;
+    background-image: url('images/123.jpg');
+    background-size: cover;
+}
+.menubar{
+    background: #474746;
+    border-bottom: 5px solid orange;
+    width: 100%;
+    height: 30px;
+}
+.textmenubar{
+    color: orange;
+    float: left;
+    padding: 10px 5px 10px 10px;
+    font-weight: bold;
+}
+.textmenubar:hover{
+    color: #d63031;
+}
+.thanhchia{
+    background: #4F4F4F;
+    margin-top: 2px;
+    margin-bottom: 11px;
+    margin-left: 5px;
+    width: 2px;
+    height: 25px;
+    float: left;
+}
+#body {
+    background: white;
+    width: 100%;
+    height: 880px;
+}
+.bodyleft{
+    float: left;
+    width: 19%;
+    margin-left: 5px;
+    margin-right: 1px;
+}
+.left{
+    width: 95%;
+    border: 1px solid grey;
+    margin-bottom: 20px;
+}
+.smallmenu{
+    width: 93%;
+    height: 20px;
+    padding-top: 6px;
+    background: #474746;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border-left: 10px solid orange;
+}
+.listmenu{
+    color: blue;
+    margin-left: -36px;
+    padding: 5px;
+}
+.listmenu:hover{
+    color: #d63031;
+}
+.bodymain{
+    float: left;
+    width: 59%;
+    margin-left: 2px;
+}
+.zentinfo{
+    width: 95%;
+    height: 70px;
+    border-radius: 15px;
+    padding: 8px; 
+    background: #f8c291;
+    color: white;
+    text-indent: 20px;
+    font-style: italic;
+}
+.menubar_left{
+    margin-top: 30px;
+    background-image: url('images/menu_left.gif');
+    width: 100%;
+    height: 25px;
+}
+.textmenubar_left{
+    padding-top: 5px;
+    width: 100%;
+    height: 20px;
+    font-weight: bold;
+    color: white;
+    text-indent: 10px;
+}
+.content{
+    margin-bottom: 20px;
+}
+.tieude{
+    color:orange;
+    font-weight:bold;
+}
+.menubar_right{
+    margin-top: 30px;
+    background-image: url('images/menu_right.gif');
+    width: 100%;
+    height: 25px;
+}
+#imgtrangthai{
+    padding: 5px;
+}
+.footer{
+    background: #474746;
+    border-top: 5px solid orange;
+    width: 100%;
+    height: 50px;
+    clear: both;
+}
+.textfooter{
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    margin-top: 18px;
+}
+

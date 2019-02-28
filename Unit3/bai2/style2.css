@@ -1,0 +1,22 @@
+.container{
+    margin-left: 170px;
+    width: 804px;
+    height: 139px;
+    background: rgb(245, 251, 251);     
+}
+.box{
+    margin: 10px;
+    float: left;
+    width: 181px;
+    height: 100px;
+}
+.box_1{
+    margin-top: 10px;
+}
+.box_1:hover{
+    color:red;
+    text-decoration: underline
+}
+.check{
+    margin-right: 17px;
+}

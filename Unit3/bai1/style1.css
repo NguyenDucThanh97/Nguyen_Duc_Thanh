@@ -1,0 +1,29 @@
+.container{
+    margin-left: 200px;
+}
+.osanpham:hover{
+    border: 2px solid orange;
+}
+.osanpham{
+    text-align: center;
+    border: 1px solid rgb(22, 19, 17);
+    width: 100px;
+    height: 180px;
+    padding: 10px;
+    margin: 10px;
+    float: left;
+}
+.namesp{
+    color: rgb(255, 187, 0);
+    font-size: 18px;
+}
+.namesp:hover{
+    color: blue;
+}
+.price{
+    color: red;
+    font-weight: bold;
+}
+.price:hover{
+    color: blue;
+}
