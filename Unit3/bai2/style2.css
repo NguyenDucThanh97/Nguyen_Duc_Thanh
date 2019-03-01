@@ -15,8 +15,7 @@
 }
 .box_1:hover{
     color:red;
-    text-decoration: underline
 }
-.check{
+#check{
     margin-right: 17px;
 }
