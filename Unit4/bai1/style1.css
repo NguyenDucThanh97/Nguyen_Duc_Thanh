@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: white;
+}
+.menubar{
+    width: 100%;
+    height: 50px;
+    background: #78b43d;
+    margin: 0 auto;
+}
+li{
+    cursor: pointer;
+}
+ul{
+    list-style: none;
+}
+#anh24h{
+    width: 14%;
+    height: 50px;
+    float: left;
+    text-align: right;
+    padding-top: 6px;
+    padding-right: 10px;
+    border-right: 1px solid white;
+}
+.thanhmenu{
+    width: 82%;
+    height: 50px;
+    float: left;
+}
+#icon1{
+    color: white;
+    font-size: 20px;
+    width: 60px;
+    line-height: 32px;
+    text-align: center;
+    height: 32px;
+}
+.menu-lv1{
+    float: left;
+    position: relative;
+    height: 50px;
+    text-align: center;
+    padding-left: 7px;
+}
+.textmenu{
+    padding-top: 5px;
+    text-indent: 8px;
+}
+.thanhchia{
+    width: 1px;
+    height: 30px;
+    background-color: white;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#img{
+    margin-top: 5px;
+}
+a{
+    font-size: 13px;
+    text-decoration: none;
+}
+.menu-lv2{
+    width: 150px;
+    border-top: 1px solid #78b43d;
+    border-bottom: 1px solid #78b43d;
+    padding: 5px;
+    position: relative;
+}
+#parent-lv2{
+    background-color: #5daa0f;
+    text-align: left;
+    display: none;
+    position: absolute;
+    top: 51px;
+    right: -99px;
+}
+#parent-lv3{
+    background-color: #78b43d;
+    text-align: left;
+    display: none;
+    position: absolute;
+    top: 5px;
+    right: -157px;
+}
+.menu-lv2:hover #parent-lv3{
+    display: block;
+}
+.menu-lv3{
+    width: 150px;
+    border-top: 1px solid #78b43d;
+    border-bottom: 1px solid #78b43d;
+    padding: 3px;
+}
+.menu-lv1:hover #parent-lv2{
+    display: block;
+}
+.menu-lv1:hover > #icon1{
+    font-size: 25px;
+}
+.menu-lv1:hover > p{
+    font-size: 13px;
+}
+.menu-lv2:hover{
+    background-color: #78b43d;
+}
+.menu-lv2:hover > #text-lv2{
+    font-size: 15px;
+}
+.menu-lv3:hover > #text-lv2{
+    font-size: 15px;
+}
+.menu-lv3:hover{
+    background-color: #5daa0f;
+}
+.search{
+    width:40px;
+    height:40px;
+    float:left;
+    border: 2px solid white;
+    border-radius:50%;
+    margin-top:3px;
+    margin-left:60px;
+    text-align:center;
+}
+#icon2{
+    font-size:25px;
+    padding-top:6px;
+}

@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 80%;
+    margin-left: 50px;
+    font-family: 'MYRIADPRO-REGULAR';
+}
+#container div{
+    float: left;
+}
+ul{
+    list-style: none;
+}
+#header{
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    margin-left: -50px;
+    background-color: white;
+    
+}
+#name{
+    text-indent: 55px;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 30px;
+    float: left;
+    margin-top: 10px;
+    color: rgb(214, 203, 42);
+}
+@font-face{
+    src: url('fonts/MYRIADPRO-REGULAR.OTF');
+    font-family: 'MYRIADPRO-REGULAR';
+}
+#textbutton{
+    font-family: 'MYRIADPRO-REGULAR';
+    font-size: 22px;
+    width: 87px;
+    height: 33px;
+    border-radius: 7px;
+}
+#textbutton:hover{
+    color: orange;
+    box-shadow: 1px 1px 1px 1px rgb(46, 43, 43);
+}
+#button ul > li:hover{
+    color: orange;
+}
+#button{
+    margin-left: 600px;
+    width: 500px;
+    height: 50px;
+}
+#button ul > li{
+	float: right;
+	margin-right:40px; 
+	margin-top:18px;  
+	font-size: 22px;
+	color: black;
+}
+#main{
+    margin-top: 120px;
+    clear: both;
+    position: relative;
+    height: 800px;
+}
+#left{
+    width: 14%;
+    float: left;
+}
+#left ul > li{
+    padding: 5px;
+}
+#left ul > li:hover{
+    color: rgb(0, 163, 218);
+    font-size: 18px;
+}
+#content{
+    width: 65%;
+    float: right;
+    position: absolute;
+    position: relative;
+    right: 150px;
+}
+#content ul > li{
+    float: left;
+}
+.box{
+    width: 160px;
+    height: 229px;
+    margin: 10px;
+    border-radius: 10px;
+    text-indent: 10px;
+    position: relative;
+    float: left;
+    z-index: 10;
+}
+.text1{
+    border-radius: 10px 10px 0 0;
+    background-color: rgb(218, 218, 218);
+    line-height: 40px;
+    height: 19%;
+}
+.text2{
+    border-radius: 0 0 10px 10px;
+    background-color: rgb(122, 122, 122);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 5px 0;
+    opacity: 0.5;
+    height: 30px;
+}
+.boximg1{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 185px;
+    border-radius: 0 0 10px 10px;
+}
+#imgbox{
+    width: 100%;
+    margin-left: -10px;
+    height: 185px;
+    border-radius: 0 0 10px 10px; 
+}
+.tieude{
+    color: white !important; 
+    position: absolute;
+    bottom: 18px;
+}
+.box:hover {
+    color: rgb(87, 177, 207);
+}
+.box:hover p{
+    font-size: 17px;
+}
+.box:hover .text1{
+    font-size: 17px;
+}
+.box:hover #imgbox{
+	opacity: 0.8;
+}
+.footer{
+    clear: both;
+    height: 50px;
+}
+.textfooter{
+    padding: 10px;
+}
+a{
+    color: blue;
+}
+.textfooter:hover a{
+    color: lightblue;
+    font-size: 18px;
+    text-decoration: none;
+}
+.textfooter:hover{
+    color: lightblue;
+    font-size: 18px;
+}
+#imgzent{
+    background-size: cover;
+    width: 200px;
+}
+.box-parent:hover .nen{
+    display: block;
+}
+.nen{
+    display: none;
+    width: 170px;
+    height: 239px;
+    border-radius: 10px;
+    position: absolute;
+    z-index: -2;
+    box-shadow: 1.5px 1.5px 1.5px 1.5px rgb(46, 43, 43);
+}
+#nen1{
+    top: 5px;
+    left: 5px;
+}
+.nen2{
+    top: -5px;
+    left: -5px;
+} 
