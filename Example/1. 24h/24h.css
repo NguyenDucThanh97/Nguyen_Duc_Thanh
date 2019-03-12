@@ -443,52 +443,55 @@ article #ar-tin-tuc .tin-tuc-small img:hover{
     overflow: hidden;
 }
 
-#parent-lv2{
-    background-color: #82c940 ;
-    position: absolute;
-    width: 140px;
-    top: 9px;
-    left: -59px;
+.menu-lv1:hover #parent-lv2{
+    display: block;
 }
 #parent-lv2{
+    display: none;
     line-height: 25px;
     font-size: 17px;
     text-transform: none;
-    display: none;
     position: relative;
     text-align: left;
+    background-color: #82c940 ;
+    position: absolute;
+    width: 145px;
+    top: 50px;
+    left: -50px;
 }
 #parent-lv2 .menu-lv2 a{
     color: black;
-    padding-left: 5px;
 }
-#parent-lv2 .menu-lv2 a > i{
+#parent-lv2 a > i{
     color: white !important;
     font-size: 10px;
-    padding: 0 5px;
+    padding: 10px 5px 0 15px;
 }
+
 #parent-lv2 .menu-lv2:hover{
     background-color: #61a720;
 }
-#parent-lv3 .menu-lv3:hover{
+.menu-lv2:hover a{
+    color: white !important;
+}
+#parent-lv3 a{
+    color: black !important;
+}
+#parent-lv3 .menu-lv3:hover > a{
+    color: white !important;
+}
+#parent-lv3 > .menu-lv3:hover{
     background-color: #61a720;
-}
-#hover-loi:hover #parent-lv2{
-    display: block;
-}
-#menu-img:hover{
-    width: auto;
-}
-#hover-loi:hover{
-    width: 60px !important;
 }
 #parent-lv3{
     display: none;
     position: absolute;
-    top: 26px;
-    right: -124px;
+    top: 28px;
+    right: -129px;
     background-color: #78c432 ;
 }
+
+
 .menu-lv2:hover #parent-lv3{
     display: block;
 }
