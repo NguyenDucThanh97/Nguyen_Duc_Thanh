@@ -32,16 +32,15 @@ header{
     float: left;
     color: white;
     position: relative;
-    text-align: center;
     height: 49px;
-    padding: 0 12px;
+    padding: 0px 15px;
 }
 li{
     cursor: pointer;
 }
-#menu ul{
+/* #menu ul{
     width: 100%;
-}
+} */
 #menu .menu-lv1 a{
     color: white;
     font-size: 75%;
@@ -51,14 +50,11 @@ li{
 }
 #menu .menu-lv1  #menu-dm{
     margin-top: 10%;
-    text-align: left;
+    text-align: center;
 }
 #menu .menu-lv1  #menu-dm .fa-list-ul{
     font-size: 15px;
     padding-bottom: 5px
-}
-#menu .menu-lv1 i{
-    margin-left: 30%;
 }
 #menu-img{
     text-align: center;
@@ -99,7 +95,7 @@ li{
     padding: 0 14px;
 }
 #menu ul .thanh-doc{
-    margin-left: -25px;
+    margin-left: -29px;
     border-right: 1px solid rgb(223, 214, 214);
 }
 #menu{
@@ -406,6 +402,7 @@ article #ar-tin-tuc .tin-tuc-small img:hover{
 #ads .thi-truong{
     width: 100%;
     margin-top: 30px;
+    margin-bottom: 15px;
 }
 #ads .thi-truong .thi-truong-sm{
     margin-top: 10px;
@@ -418,4 +415,86 @@ article #ar-tin-tuc .tin-tuc-small img:hover{
 }
 #ads .img-ads-sm{
     width: 110px;
+}
+#ads .thi-truong h2 > a{
+    color: #528a1e !important;
+}
+#dn-text{
+    font-weight: bold;
+}
+#ads .thi-truong .thi-truong-sm a > p{
+    margin-top: 5px;
+}
+#ads .thi-truong ul{
+    clear: both;
+    margin-left: 18px;
+}
+#ads .thi-truong ul li{
+    padding: 5px 0;
+}
+#ads .thi-truong #phai-dep{
+    color: #d2577e !important;
+}
+#ads .thi-truong #ulli-phai-dep li{
+    color: #d2577e;
+}
+.img-fixed{
+    position: relative;
+    overflow: hidden;
+}
+
+#parent-lv2{
+    background-color: #82c940 ;
+    position: absolute;
+    width: 140px;
+    top: 9px;
+    left: -59px;
+}
+#parent-lv2{
+    line-height: 25px;
+    font-size: 17px;
+    text-transform: none;
+    display: none;
+    position: relative;
+    text-align: left;
+}
+#parent-lv2 .menu-lv2 a{
+    color: black;
+    padding-left: 5px;
+}
+#parent-lv2 .menu-lv2 a > i{
+    color: white !important;
+    font-size: 10px;
+    padding: 0 5px;
+}
+#parent-lv2 .menu-lv2:hover{
+    background-color: #61a720;
+}
+#parent-lv3 .menu-lv3:hover{
+    background-color: #61a720;
+}
+#hover-loi:hover #parent-lv2{
+    display: block;
+}
+#menu-img:hover{
+    width: auto;
+}
+#hover-loi:hover{
+    width: 60px !important;
+}
+#parent-lv3{
+    display: none;
+    position: absolute;
+    top: 26px;
+    right: -124px;
+    background-color: #78c432 ;
+}
+.menu-lv2:hover #parent-lv3{
+    display: block;
+}
+.menu-lv2{
+    border-bottom: 1px solid #69a52e;
+}
+.menu-lv3{
+    border-bottom: 1px solid #69a52e;
 }
