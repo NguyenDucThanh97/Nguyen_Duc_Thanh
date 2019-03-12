@@ -451,13 +451,23 @@ article #ar-tin-tuc .tin-tuc-small img:hover{
     line-height: 25px;
     font-size: 17px;
     text-transform: none;
-    position: relative;
     text-align: left;
-    background-color: #82c940 ;
+    background-color: #aad862;
     position: absolute;
     width: 145px;
-    top: 50px;
-    left: -50px;
+    top: 49px;
+    left: -56px;
+}
+#parent-lv3{
+    display: none;
+    position: absolute;
+    top: 27px;
+    right: -145px;
+    background-color: #7ab245;
+    width: 145px;
+}
+.vi-tri-2{
+    left: 0px !important;
 }
 #parent-lv2 .menu-lv2 a{
     color: black;
@@ -469,7 +479,7 @@ article #ar-tin-tuc .tin-tuc-small img:hover{
 }
 
 #parent-lv2 .menu-lv2:hover{
-    background-color: #61a720;
+    background-color: #7ab245;
 }
 .menu-lv2:hover a{
     color: white !important;
@@ -481,17 +491,8 @@ article #ar-tin-tuc .tin-tuc-small img:hover{
     color: white !important;
 }
 #parent-lv3 > .menu-lv3:hover{
-    background-color: #61a720;
+    background-color: #aad862;
 }
-#parent-lv3{
-    display: none;
-    position: absolute;
-    top: 28px;
-    right: -129px;
-    background-color: #78c432 ;
-}
-
-
 .menu-lv2:hover #parent-lv3{
     display: block;
 }
