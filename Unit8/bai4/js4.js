@@ -8,8 +8,8 @@ function enterNumberic(thongBao){
     return a;
 }
 var m,n,k;
-m = enterNumberic("M");
 n = enterNumberic("N");
+m = enterNumberic("M");
 k = enterNumberic("K");
 var dem;
 dem = 0.0;
