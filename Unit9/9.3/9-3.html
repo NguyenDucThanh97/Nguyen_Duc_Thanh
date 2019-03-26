@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="9-3.css">
+    <title>9.3</title>
+</head>
+<body>
+    <div id="box">
+        <div id="f-size">Cỡ chữ</div><br>
+        <button type="button" id="macdinh" onclick="macDinh()">Mặc định</button>
+        <button type="button" id="big" onclick="zoomIn()">Lớn</button>
+        <button type="button" id="small" onclick="zoomOut()">Nhỏ</button>
+    </div>
+    <div id="content">
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque itaque doloremque nam ab, quidem delectus distinctio 
+            fugit obcaecati accusamus? Asperiores?
+        </p>
+    </div>
+    <script>
+        var s=20;
+        var a = document.getElementById('f-size');
+        function macDinh(){
+            s=20;
+            var x = document.getElementById('content');
+            x.style.fontSize = s + "px"
+            a.innerHTML = "Cỡ chữ: " + s +" px";
+        }
+        function zoomIn(){
+            s *= 1.4;
+            var x = document.getElementById('content');
+            x.style.fontSize = s + "px"
+            a.innerHTML = "Cỡ chữ: " + s +" px";
+        }
+        function zoomOut(){
+            s *= 0.6;
+            var x = document.getElementById('content');
+            x.style.fontSize = s + "px"
+            a.innerHTML = "Cỡ chữ: " + s +" px";
+        }
+    </script>
+</body>
+</html>

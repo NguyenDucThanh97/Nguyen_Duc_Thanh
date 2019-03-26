@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 50px;
+    cursor: pointer;
+}
+.check, .ct-small {
+    border: 1px solid;
+    padding: 5px;
+    float: left;
+}
+.check {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.content {
+    clear: both;
+    background-color: lightgrey;
+    display: table;
+}
+p{
+    text-decoration: underline;
+    display: inline-block;
+    margin-top: 20px;
+    padding-right: 20px;
+}

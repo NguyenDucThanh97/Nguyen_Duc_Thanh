@@ -197,7 +197,7 @@ hr{
 .featured1{
     width: 84%;
     position: absolute;
-    bottom: 5%;
+    bottom: 8%;
     left: 8%;
     background: white;
     text-align: center;
@@ -461,16 +461,15 @@ hr{
     border-top: 1px solid lightgray;
     border-bottom: 1px solid lightgray;
     margin: 40px 0;
-    text-align: center;
-    position: relative;
 }
 #border i{
     background-color: #f6f6f6;
     padding: 0 15px;
     font-size: 30px;
-    position: absolute;
-    margin-left: -7%;
-    top: -20px;
+    display: block;
+    transform: translateY(-14px);
+    width: 128px;
+    margin: 0 auto;
 }
 
 .content8 >p{
@@ -697,9 +696,6 @@ button{
     }
     .header >ul {
         display: none;
-    }
-    #border i{
-        margin-left: -20%;
     }
 }
 @media (min-width: 359px ) and (max-width: 768px){

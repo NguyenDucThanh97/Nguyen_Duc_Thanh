@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="9-2.css">
+    <title>9.2</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content" onmouseover="change(this)" onmouseout="reset(this)">
+            <div class="check"><input name="check" type="checkbox"></div>
+            <div class="ct-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quod!</div>
+        </div>
+        <div class="content" onmouseover="change(this)" onmouseout="reset(this)" onmouseover="change(this)" onmouseout="reset(this)">
+            <div class="check"><input name="check" type="checkbox"></div>
+            <div class="ct-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quod!</div>
+        </div>
+        <div class="content" onmouseover="change(this)" onmouseout="reset(this)" onmouseover="change(this)" onmouseout="reset(this)">
+            <div class="check"><input name="check" type="checkbox"></div>
+            <div class="ct-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quod!</div>
+        </div>
+        <div class="content" onmouseover="change(this)" onmouseout="reset(this)">
+            <div class="check"><input name="check" type="checkbox"></div>
+            <div class="ct-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quod!</div>
+        </div>
+        <div class="content" onmouseover="change(this)" onmouseout="reset(this)">
+            <div class="check"><input name="check" type="checkbox"></div>
+            <div class="ct-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quod!</div>
+        </div>
+        <div class="content" onmouseover="change(this)" onmouseout="reset(this)">
+            <div class="check"><input name="check" type="checkbox"></div>
+            <div class="ct-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quod!</div>
+        </div>
+        <div class="content" onmouseover="change(this)" onmouseout="reset(this)">
+            <div class="check"><input name="check" type="checkbox"></div>
+            <div class="ct-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quod!</div>
+        </div>
+        <p onclick="checkAll()">Check all</p>
+        <p onclick="unCheckAll()">Uncheck all</p>
+    </div>
+    <script>
+        function change(bg) {
+            bg.style.backgroundColor = "white";
+        }
+        function reset(bg) {
+            bg.style.background = "lightgrey";
+        }
+        function checkAll(){
+            var arraycheck = document.getElementsByTagName("input");
+            for (let i = 0; i < arraycheck.length; i++) {
+                arraycheck[i].checked = true;
+            }
+        }
+        function unCheckAll(){
+            var arraycheck = document.getElementsByTagName("input");
+            for (let i = 0; i < arraycheck.length; i++) {
+                arraycheck[i].checked = false;
+            }
+            debugger
+        }
+    </script>
+</body>
+</html>

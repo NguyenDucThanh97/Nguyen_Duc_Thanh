@@ -1,0 +1,10 @@
+#box {
+    border: 1px solid;
+    display: table;
+}
+#f-size, button{
+    margin: 10px;
+}
+#content{
+    font-size: 20px;
+}
