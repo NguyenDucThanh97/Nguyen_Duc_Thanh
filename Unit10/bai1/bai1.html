@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bai1.css">
+    <link rel="stylesheet" href="font/icon/css/font-awesome.css">
+    <title>Slide Show</title>
+</head>
+<body onload="load()">
+    <div class="container">
+        <img src="images/anh3.jpg" class="img">
+        <img src="images/anh2.jpg" class="img">
+        <img src="images/anh1.jpg" class="img">
+        <img src="images/anh4.jpeg" class="img">
+        <button id="prev" onclick="prev()" class="fa fa-arrow-left"></button>
+        <button id="next" onclick="next()" class="fa fa-arrow-right"></button>
+        <div class="btn">
+            <button onclick="showAnh(0)"></button>
+            <button onclick="showAnh(1)"></button>
+            <button onclick="showAnh(2)"></button>
+            <button onclick="showAnh(3)"></button>
+        </div>
+    </div>
+    <script>
+        var img = document.getElementsByClassName("img");
+        showSlide(0);
+        animateImg();
+        var numSlide = 0;
+        function showSlide(n) {
+            for (i = 0; i < img.length; i++) {
+                img[i].style.display = 'none';
+            }
+            img[n].style.display = 'block';
+        }
+
+        //ham next anh
+        function next() {
+            numSlide++;
+
+            if (numSlide > 3) {
+                numSlide = 0;
+            }
+            console.log(numSlide);
+            showSlide(numSlide);
+            var btn = document.getElementById('prev');
+        }
+        //ham prev (tra ve) anh
+        function prev() {
+            numSlide--;
+
+            if (numSlide < 0) {
+                numSlide = 3;
+            }
+            console.log(numSlide);
+            showSlide(numSlide);
+        }
+
+        function showAnh(n) {
+            for (i = 0; i < img.length; i++) {
+                img[i].style.display = 'none';
+            }
+            img[n].style.display = 'block';
+        }
+
+        function animateImg() {
+            setInterval(function () {
+                numSlide++;
+                if (numSlide < 0) {
+                    numSlide = 3;
+                }
+                if (numSlide > 3) {
+                    numSlide = 0;
+                }
+                showSlide(numSlide);
+            }, 10000)
+        }
+    </script>
+</body>
+</html>

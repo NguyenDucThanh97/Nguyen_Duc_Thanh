@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bai2.css">
+    <title>Form</title>
+</head>
+<body>
+    <div id="container">
+        <form action="">
+            <div id="form">
+                <table>
+                    <tr>
+                        <td>Họ và tên</td>
+                        <td class="col2">
+                            <input type="text" placeholder="Nhập họ tên ...">
+                        </td>
+                        <td class="col3"></td>
+                    </tr>
+                    <tr>
+                        <td>Giới tính</td>
+                        <td class="col2">
+                            <input type="radio" name="gender" value="Nam">Nam
+                            <input type="radio" name="gender" value="Nữ">Nữ
+                        </td>
+                        <td class="col3"></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td class="col2">
+                            <input type="text" placeholder="Nhập email ...">
+                        </td>
+                        <td class="col3"></td>
+                    </tr>
+                    <tr>
+                        <td>Số điện thoại</td>
+                        <td class="col2">
+                            <input type="text" placeholder="Nhập số điện thoại ..." onkeypress="return isNumberKey(event);">
+                        </td>
+                        <td class="col3"></td>
+                    </tr>
+                    <tr>
+                        <td>Mật khẩu</td>
+                        <td class="col2">
+                            <input type="password">
+                        </td>
+                        <td class="col3"></td>
+                    </tr>
+                    <tr>
+                        <td>Xác nhận mật khẩu</td>
+                        <td class="col2">
+                            <input type="password">
+                        </td>
+                        <td class="col3"></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="btn">
+                <button onclick="button()" type="button">Đăng kí</button>
+                <button type="delete">Xóa trắng</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        function button() {
+            var array1 = document.getElementsByTagName("input");
+            var array2 = document.getElementsByClassName("col3");
+            for (var i = 0; i < array1.length; i++) {
+                if (array1[i].value == "") {
+                    switch (i) {
+                        case 0:
+                            array2[0].innerHTML = "Nhập họ tên đầy đủ"
+                            break;
+                        case 3:
+                            array2[2].innerHTML = "Nhập email"
+                            break;
+                        case 4:
+                            array2[3].innerHTML = "Nhập số điện thoại"
+                            break;
+                        case 5:
+                            array2[4].innerHTML = "Nhập mật khẩu"
+                            break;
+                        case 6:
+                            array2[5].innerHTML = "Nhập xác nhận mật khẩu"
+                            break;
+                    }
+                }
+            }
+            for (var i = 0; i < array1.length; i++) {
+                if (array1[i].value != "") {
+                    switch (i) {
+                        case 0:
+                            array2[0].innerHTML = ""
+                            break;
+                        case 3:
+                            array2[2].innerHTML = ""
+                            break;
+                        case 4:
+                            array2[3].innerHTML = ""
+                            break;
+                        case 5:
+                            array2[4].innerHTML = ""
+                            break;
+                        case 6:
+                            array2[5].innerHTML = ""
+                            break;
+                    }
+                }
+            }
+            if (array1[0].value.length < 8 && array1[0].value != ""){
+                array2[0].innerHTML = "Họ tên phải nhiều hơn 8 kí tự !"
+            }
+            if (array1[4].value.length < 10 && array1[4].value != ""){
+            array2[3].innerHTML = "SĐT phải lớn hơn 10 số !"
+            }
+            var email = array1[3].value;
+            if (array1[3].value != ""){
+                regexEmail(email);
+            }
+            if (array1[5] .value != array1[6].value){
+                array2[4].innerHTML = "Mã xác nhận không đúng !"
+            }
+        }
+        function isNumberKey(sdt){
+            var charCode = (sdt.which) ? sdt.which : sdt.keyCode
+            return !(charCode > 31 && (charCode < 48 || charCode > 57));
+        }
+        function regexEmail(emailInputBox) {
+            var array2 = document.getElementsByClassName('col3');
+            var emailStr = emailInputBox;
+            var emailRegexStr = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            var isvalid = emailRegexStr.test(emailStr);
+
+            if (!isvalid) {
+                array2[2].innerHTML = "Email không đúng !";
+                emailInputBox.focus;
+            }
+            else {
+                array2[2].innerHTML = "";
+                emailInputBox.focus;
+            }
+        }
+    </script>
+</body>
+</html>
