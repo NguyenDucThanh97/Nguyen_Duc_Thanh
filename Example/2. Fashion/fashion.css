@@ -412,11 +412,12 @@ hr{
 }
 .content7 .fa-quote-right{
     width: 50px;
-    position: absolute;
     z-index: 10;
     background-color: #f6f6f6;
-    top: -10px;
     color: rgb(190, 190, 190);
+    display: block;
+    transform: translateY(-8px);
+    margin: 0 auto;
 }
 .content8{
     text-align: center;
