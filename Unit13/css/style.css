@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+#border-radius-50 {
+    border-radius: 50px;
+    background-color: white;
+    color: black;
+    border: none;
+}
+.header .jumbotron > #border-radius-50 {
+    background-color: tomato;
+    color: white;
+}
+.jumbotron {
+    text-align: center;
+}
+.w-70 {
+    width: 70%;
+    margin: 0 auto;
+}
+.w-85 {
+    width: 85%;
+    margin: 0 auto;
+}
+.mau {
+    color: tomato;
+}
+.w-50 {
+    width: 50%;
+    margin: 0 auto;
+}
+.fs-25 {
+    font-size: 22px;
+    padding-top: 10px;
+}
+.fs-2rem {
+    font-size: 2rem !important;
+    font-weight: 300;
+    line-height: 1.2;
+}
+#header-4 .row {
+    padding-bottom: 70px;
+}
+#header-4 .card-body {
+    padding: 0 10px;
+}
+#header-3 .jumbotron {
+    padding-bottom: 30px;
+    padding-top: 5rem;
+}
+#header-3 .jumbotron >h3 {
+    padding-bottom: 15px;
+}
+.jumbotron > hr{
+    margin: 0 auto;
+    height: 1px;
+    background-color: tomato;
+    width: 70px;
+}
+.jumbotron >h3 {
+    padding-bottom: 30px;
+}
+.jumbotron >p {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+#header-2 .jumbotron >p {
+    padding: 20px 0;
+}
+#header-2 {
+    background: tomato;
+    color: white;
+}
+#header-2 .jumbotron > hr{
+    background-color: white;
+}
+#header-2 .jumbotron {
+    margin-bottom: 0 !important;
+}
+#header-5 .jumbotron {
+    margin-bottom: 0 !important;
+}
+#header-4 .card {
+    text-align: center;
+    padding-bottom: 20px;
+}
+#header-4 i {
+    color: tomato;
+    font-size: 45px;
+}
+#header-5 {
+    background-color: #212529;
+    color: white;
+}
+#header-6 .card {
+    text-align: center;
+    padding-bottom: 20px;
+    width: 70%;
+    margin: 0 auto;
+}
+#header-6 i {
+    font-size: 45px; 
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+.padding-bottom {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
+.header .fa-bars {
+    color: lightgrey;
+}
+.header .navbar-light .navbar-toggler {
+    border-color: lightgrey;
+    cursor: pointer !important;
+}
+
+#bg-none {
+    background: none;
+}
+
+.container {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 100% !important;
+}
+.row >.col {
+    margin: 0; 
+    padding: 0;
+    border: none;
+    border-radius: 0px;
+}
+.card >img{
+    border-radius: 0px !important;
+    max-width: 100%;
+    border: 1px solid lightcyan;
+}
+.card {
+    border: none !important;
+}
+.in-hoa {
+    text-transform: uppercase;
+}
+.header {
+    padding-bottom: 10px;
+    background-image: url('../images/bg-1.jpeg');
+    width: 100%;
+    background-size: cover;
+    color: white !important;
+}
+.header .navbar a{
+    color: white !important;
+}
+
+
+/* desktop big */
+@media all and (min-width: 1200px){
+    
+}
+/* desktop */
+@media all and (max-width: 992px){
+    #nav1 {
+        margin-left: 60px;
+    }
+}
+/* tablet */
+@media all and (max-width: 768px){
+
+}
+/* smartphone */
+@media all and (max-width: 576px){
+    .display-4 {
+        font-size: 2rem !important;
+    }
+    .fs-2rem {
+        font-size: 1.5rem !important;
+    }
+}
